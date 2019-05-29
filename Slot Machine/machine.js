@@ -3,16 +3,15 @@
 
 class Machine extends React.Component{
   render() {
+    const {s1,s2,s3} = this.props;
     let msg = "You Loose!";
-    if(this.props.s1 === this.props.s2 === this.props.s3){
+    if((s1 === s2) && (s2 === s3)){
       msg = "You Win!";
     }
     return(
       <div>
-        {this.props.s1}
-        {this.props.s2}
-        {this.props.s3}
-        {msg}
+        <p>{s1} {s2} {s3}</p>
+        <p>{msg}</p>
       </div>
     );
   }
