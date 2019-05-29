@@ -1,6 +1,5 @@
 // The machine will take 3 items, S1, S2 and S3
 // display the 3 and then also compare to display a messege
-
 class Machine extends React.Component{
   render() {
     const {s1,s2,s3} = this.props;
