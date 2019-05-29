@@ -9,8 +9,10 @@ class Machine extends React.Component{
       msg = "You Win!";
     }
     return(
-      <div>
-        <p>{s1} {s2} {s3}</p>
+      <div className = "Machine">
+        <p style = {{fontSize: '20px'}}>
+          {s1} {s2} {s3}
+        </p>
         <p>{msg}</p>
       </div>
     );
