@@ -29,6 +29,5 @@ function Hello(){
     // so this is a single component still that renders multuple things
   );
 }
-
 // spesify what it is we want to render and where
 ReactDOM.render(<Hello />, document.getElementById('root'));
