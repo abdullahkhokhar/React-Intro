@@ -1,6 +1,7 @@
 function choice(items){
   // returns a randomly selected item from array of items
-  return Math.floor(Math.random() * items.length)+1
+  let idx = Math.floor(Math.random() * items.length)
+  return items[idx];
 }
 
 function remove(items, item){
@@ -8,10 +9,9 @@ function remove(items, item){
   // and returns it. Otherwise returns undefined.
 
   for(let i  = 0; i < items.length; i++){
-    if(items[i] ==== item){
+    if(items[i] === item){
       // remove the item and return it
-      items.splice(i, 1);
-      return items[i];
+      return [ ...items.slice(0,i), ...items.slice(i+1) ];
     }
   }
   return undefined;
