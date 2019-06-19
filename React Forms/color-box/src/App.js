@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import BoxList from './BoxList';
 import './App.css';
 
 function App() {

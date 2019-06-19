@@ -8,7 +8,7 @@ class Box extends Component{
         <div style= {{
           height: `${this.props.height}em`,
           width: `${this.props.width}em`,
-          backgroundColor: this.props.colors
+          backgroundColor: this.props.color
         }}>
         </div>
         <button>X</button>
